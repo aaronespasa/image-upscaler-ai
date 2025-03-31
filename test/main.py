@@ -10,12 +10,12 @@ def test_increase_resolution(decrease_original_resolution=False):
     if decrease_original_resolution:
         decrease_resolution(original_image_path, downscaled_image_path)
 
-    # inference_super_resolution(
-    #     downscaled_image_path, 
-    #     output_image_path, 
-    #     model_type=ModelType.DRCT, 
-    #     precision=Precision.FP16
-    # )
+    inference_super_resolution(
+        downscaled_image_path, 
+        output_image_path, 
+        model_type=ModelType.DRCT, 
+        precision=Precision.FP16
+    )
     
     plot_images(downscaled_image_path, output_image_path, original_image_path if decrease_original_resolution else None)
 

@@ -117,6 +117,7 @@ def plot_images(input_image_path: str,
                 zoom_factor: int = 4,
                 num_rows: int = 4,
                 seed: Optional[int] = None):
+    plt.style.use('dark_background')
     if seed is not None:
         random.seed(seed)
 
