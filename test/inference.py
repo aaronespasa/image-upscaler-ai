@@ -145,7 +145,7 @@ def inference_super_resolution(
     input_image_path: str,
     output_image_path: str,
     model_type: ModelType,
-    model_path: str = "./models/net_g_latest.pth",
+    model_path: str = "./models/DRCT_L_x4.pth",
     precision: Precision = Precision.FP32,
     drct_params: dict = None
 ):
@@ -175,7 +175,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Image Super-Resolution Inference")
 
     parser.add_argument('--model_type', type=str, default=ModelType.DRCT.value, choices=[m.value for m in ModelType], help='Type of model to use')
-    parser.add_argument('--model_path', type=str, default="./models/net_g_latest.pth", help='Path to the pre-trained model weights')
+    parser.add_argument('--model_path', type=str, default="./models/DRCT_L_x4.pth", help='Path to the pre-trained model weights')
     parser.add_argument('--precision', type=str, default=Precision.FP32.value, choices=[p.value for p in Precision], help='Inference precision (fp32 or fp16)')
 
     # DRCT specific parameters bundled

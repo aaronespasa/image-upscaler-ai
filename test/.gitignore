@@ -1,5 +1,4 @@
-net_d_latest.pth
-net_g_latest.pth
+*.pth
 drct/
 
 *.jpg

@@ -23,10 +23,10 @@ You can download this folder in Windows using the command:
 .\clone_dcrt.ps1
 ```
 
-### Download the `Real_DCRT-L_GAN_SRx4` model
+### Download the `DRCT` model
 
-Download the files `net_d_latest.pth` and `net_g_latest.pth` from the following link:
-https://drive.google.com/drive/folders/1W-2EEC5mclFzzWrp65u7JDuLDiaA_vPX
+Download the file `DRCT_BASE_x4.pth` or `DRCT_L_x4.pth` from the following link:
+https://huggingface.co/aaronespasa/drct-super-resolution/tree/main
 
 Put the downloaded files in the `models` folder.
 
