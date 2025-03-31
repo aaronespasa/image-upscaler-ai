@@ -1,0 +1,3 @@
+ORIGINAL_IMAGES_PATH = 'original_images'
+DOWNSCALED_IMAGES_PATH = 'input'
+OUTPUT_IMAGES_PATH = 'output'

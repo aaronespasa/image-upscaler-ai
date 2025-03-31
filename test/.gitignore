@@ -1,0 +1,7 @@
+net_d_latest.pth
+net_g_latest.pth
+drct/
+
+*.jpg
+!original_images/beagle.jpg
+*.png
